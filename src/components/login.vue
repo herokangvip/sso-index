@@ -64,7 +64,7 @@
           //headers: {'contentType': 'application/json;'},
           headers: {'Content-Type': 'application/x-www-form-urlencoded'},
         });
-        var params = new URLSearchParams();
+        let params = new URLSearchParams();
         params.append('name', this.ruleForm.name);
         let pass = CryptoJS.MD5(this.ruleForm.password);
         params.append('password', pass);
