@@ -62,7 +62,8 @@
           baseURL: 'http://ssoserver.heroking.com:8080/api/',
           timeout: 1000,
           //headers: {'contentType': 'application/json;'},
-          headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+          headers: {'Content-Type': 'application/x-www-form-urlencoded',
+          "loginType":"1"},
         });
         let params = new URLSearchParams();
         params.append('name', this.ruleForm.name);
